@@ -1,0 +1,85 @@
+Date : 2023-06-10 16:47:34
+Directory : c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src
+Total : 52 files,  3787 codes, 154 comments, 317 blanks, all 4258 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         14 |      2,791 |        118 |        264 |      3,173 |
+| XML        |         34 |        921 |          0 |         34 |        955 |
+| CSS        |          4 |         75 |         36 |         19 |        130 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                           | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                              |         52 |      3,787 |        154 |        317 |      4,258 |
+| . (Files)                                                                                      |          6 |        102 |         50 |         28 |        180 |
+| Pages                                                                                          |         12 |      2,764 |        104 |        255 |      3,123 |
+| Pages (Files)                                                                                  |          2 |        645 |         35 |         72 |        752 |
+| Pages\Experience                                                                               |          1 |        722 |         26 |         48 |        796 |
+| Pages\Projects                                                                                 |          1 |      1,093 |         36 |         79 |      1,208 |
+| Pages\Utils                                                                                    |          8 |        304 |          7 |         56 |        367 |
+| img                                                                                            |         34 |        921 |          0 |         34 |        955 |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                       | language   | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\App.css                        | CSS        |         18 |         34 |          6 |         58 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\App.js                         | JavaScript |         32 |          5 |          7 |         44 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\AppStyle.js                    | JavaScript |         21 |          5 |          6 |         32 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\ErrorPage.js             | JavaScript |         75 |          4 |         13 |         92 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Experience\Experience.js | JavaScript |        722 |         26 |         48 |        796 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Hello.js                 | JavaScript |        570 |         31 |         59 |        660 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Projects\Projects.js     | JavaScript |      1,093 |         36 |         79 |      1,208 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Utils\Container.css      | CSS        |         16 |          0 |          3 |         19 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Utils\Container.js       | JavaScript |         70 |          0 |          8 |         78 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Utils\PageTransition.css | CSS        |         21 |          0 |          5 |         26 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Utils\PageTransition.js  | JavaScript |         31 |          0 |          5 |         36 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Utils\SkillsCarousel.js  | JavaScript |         46 |          0 |         10 |         56 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Utils\Typer.js           | JavaScript |         46 |          1 |         10 |         57 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Utils\WIAD.js            | JavaScript |         37 |          3 |          8 |         48 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\Pages\Utils\WIAD2.js           | JavaScript |         37 |          3 |          7 |         47 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\A.svg                      | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\AI.svg                     | XML        |         52 |          0 |          1 |         53 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\ALEX.svg                   | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\B.svg                      | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\BT.svg                     | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\CAD.svg                    | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\CSS.svg                    | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\D.svg                      | XML        |         10 |          0 |          1 |         11 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\E.svg                      | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\GH.svg                     | XML        |          5 |          0 |          1 |          6 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\GIT.svg                    | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\GM.svg                     | XML        |         18 |          0 |          1 |         19 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\HASH.svg                   | XML        |         70 |          0 |          1 |         71 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\HTML.svg                   | XML        |         12 |          0 |          1 |         13 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\HomeSkeleton.svg           | XML        |        217 |          0 |          1 |        218 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\JS.svg                     | XML        |         12 |          0 |          1 |         13 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\LA.svg                     | XML        |          5 |          0 |          1 |          6 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\LE.svg                     | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\LI.svg                     | XML        |         13 |          0 |          1 |         14 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\ME.svg                     | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\MO.svg                     | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\MUI.svg                    | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\MW.svg                     | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\N.svg                      | XML        |          3 |          0 |          1 |          4 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\NET.svg                    | XML        |         10 |          0 |          1 |         11 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\NODE.svg                   | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\P.svg                      | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\PS.svg                     | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\Profile.svg                | XML        |        300 |          0 |          1 |        301 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\R.svg                      | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\RA.svg                     | XML        |          5 |          0 |          1 |          6 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\VSC.svg                    | XML        |         13 |          0 |          1 |         14 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\f.svg                      | XML        |         14 |          0 |          1 |         15 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\img\fB.svg                     | XML        |          9 |          0 |          1 |         10 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\index.css                      | CSS        |         20 |          2 |          5 |         27 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\index.js                       | JavaScript |         10 |          0 |          3 |         13 |
+| c:\Users\dell\Desktop\Projects\Portfolio\personal-portfolio\src\setupTests.js                  | JavaScript |          1 |          4 |          1 |          6 |
+| Total                                                                                          |            |      3,787 |        154 |        317 |      4,258 |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
