@@ -234,7 +234,7 @@ export const TheTitleBlock = styled.div`
 `;
 
 export const TheTitle = styled.div`
-  color: white;
+  color: red;
   font-size: 35px;
   font-weight: bold;
   margin-top: 50px;
@@ -242,7 +242,7 @@ export const TheTitle = styled.div`
 `;
 
 export const Check = styled.div`
-  color: red;
+  color: #ff6b6b;
   font-size: 20px;
   margin-top: 50px;
   margin-right: 50px;
@@ -254,6 +254,13 @@ export const TopSectionContainer = styled.div`
 `;
 
 export const InfoContainerA = styled.div`
+  height: 300px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 33px;
+`;
+
+export const InfoContainerD = styled.div`
   height: 300px;
   width: 100%;
   display: flex;
@@ -373,7 +380,7 @@ export const TION = styled.div`
 `;
 
 export const Name = styled.div`
-  color: ${(props) => (props.active ? "red" : "white")};
+  color: ${(props) => (props.active ? "#FF6B6B" : "white")};
   font-weight: bold;
   font-size: 18px;
   width: fit-content;
@@ -444,7 +451,7 @@ export const GalleryWrapper = styled.div`
   height: 80%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: start;
   margin-left: 50px;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -472,7 +479,7 @@ export const GalleryWrapper = styled.div`
 export const Gallery = styled.div`
   height: 100%;
   width: 2000px;
-  margin-left: 1200px;
+  // margin-left: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -503,7 +510,31 @@ export const GalleryItemsN = styled.div`
   align-items: center;
   align-content: center;
   height: 95%;
-  background-color: blue;
+`;
+
+export const GalleryD = styled.div`
+  height: auto;
+  width: 2000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 20px;
+  align-items: center;
+`;
+
+export const GalleryItemsD = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 95%;
+`;
+
+export const ImagesD = styled.img`
+  height: 100%;
+  width: auto;
 `;
 
 export const Images = styled.img`
@@ -625,7 +656,7 @@ export const PopupContent = styled.div`
       border-radius: 100px;
     }
     &::-webkit-scrollbar-thumb {
-      background-color: red; /* Change the color as desired */
+      background-color: darkred; /* Change the color as desired */
       border-radius: 4px; /* Adjust the border radius as desired */
     }
 
@@ -637,9 +668,7 @@ export const PopupContent = styled.div`
   }
 
   .gallery img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 110%;
     border-radius: 5px;
   }
 
@@ -744,7 +773,7 @@ export const CTE = styled.div`
 export const PageTitle = styled.div`
   font-size: 35px;
   font-weight: bold;
-  color: white;
+  color: red;
   justify-content: center;
   align-items: center;
   align-content: center;

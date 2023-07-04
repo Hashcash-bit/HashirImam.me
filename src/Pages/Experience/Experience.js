@@ -268,14 +268,12 @@ const Experience = () => {
             <LittleDescription>
               <DesText0>Web Development:</DesText0>
               <DesText1>
-                I possess a solid understanding of web development technologies,
-                including HTML, CSS, and JavaScript, allowing me to build robust
-                and visually appealing websites. <br />
-                <br />I am committed to writing clean, efficient code that
+                I am committed to writing clean, efficient code that
                 adheres to industry best practices, ensuring optimal
                 performance, accessibility, and maintainability.
                 <br />
-                <br /> I enjoy tackling complex challenges, leveraging my
+                <br />
+                I enjoy tackling complex challenges, leveraging my
                 problem-solving skills to find innovative solutions that enhance
                 user experiences.
               </DesText1>
@@ -290,10 +288,6 @@ const Experience = () => {
                 <br />I pay meticulous attention to details such as typography,
                 color theory, and visual harmony to ensure a polished and
                 cohesive design.
-                <br />
-                <br /> I stay updated on the latest design trends and
-                incorporate them thoughtfully, keeping designs modern,
-                user-friendly, and aligned with clients' goals.
               </DesText1>
             </LittleDescription>
           </>
@@ -607,13 +601,6 @@ const Experience = () => {
                 >
                   Web-Developer:
                 </div>
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "2%" }}
-                >
-                  <Circle />I possess a solid understanding of web development
-                  technologies, including HTML, CSS, and JavaScript, allowing me
-                  to build robust and visually appealing websites.
-                </div>
                 <br />
                 <div
                   style={{ display: "flex", alignItems: "center", gap: "2%" }}
@@ -656,14 +643,6 @@ const Experience = () => {
                   <Circle />I pay meticulous attention to details such as
                   typography, color theory , and visual harmony to ensure a
                   polished and cohesive design.
-                </div>
-                <br />
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "2%" }}
-                >
-                  <Circle />I stay updated on the latest design trends and
-                  incorporate them thoughtfully, keeping designs modern,
-                  user-friendly, and aligned with clients' goals.
                 </div>
                 <br />
               </HiddenIntroDescription>

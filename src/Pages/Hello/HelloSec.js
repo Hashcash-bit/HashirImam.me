@@ -140,7 +140,7 @@ const ElementWithPopup = ({ children, message }) => {
   );
 };
 
-const HelloSec = () => {
+const Hello = () => {
   // This is where Mail logic will go
   const [isOpen, setIsOpen] = useState(false);
 
@@ -281,7 +281,29 @@ const HelloSec = () => {
         <HiddenContainer>
           <HiddenTitle>Hello.</HiddenTitle>
           <HiddenTyper>
-            i am <Typer />
+            <div
+              style={{
+                width: "max-content",
+                height: "50px",
+                fontSize: "30px",
+                fontWeight: "normal",
+              }}
+            >
+              I am
+            </div>
+            <div
+              style={{
+                height: "50px;",
+                width: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+                alignContent: "center",
+                textAlign: "center",
+                position: "relative",
+              }}
+            >
+              <Typer />
+            </div>
           </HiddenTyper>
           <HiddenImageWrapper>
             <HiddenImageMe src={HASH} />
@@ -393,4 +415,6 @@ const HelloSec = () => {
   );
 };
 
-export default HelloSec;
+export default Hello;
+
+// Complete

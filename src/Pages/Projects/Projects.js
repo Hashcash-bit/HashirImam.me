@@ -37,6 +37,10 @@ import E from "../../img/E.svg"; // Expo || Nexifia
 import Nfc from "../../img/N.svg"; // NFC || Nexifia
 import GitHub from "../../img/GitHub.svg"; // GitHub || Nexifia || Antive || Covid-19 Tracker
 import FS from "../../img/FS.svg"; // FireStore || Nexifia || Antive
+import P from "../../img/P.svg";
+import DISC from "../../img/DISC.svg";
+import RASP from "../../img/RASP.svg";
+import MDB from "../../img/MDB.svg";
 
 // Antive Images
 import LandingPage from "../../img/LandingPage.png";
@@ -59,6 +63,17 @@ import HomeSkeleton from "../../img/HomeSkeleton.svg";
 import History from "../../img/History.png";
 import Search from "../../img/Search.png";
 import Profile from "../../img/Profile.svg";
+import UC from "../../img/UC.png";
+
+// Waffles Bot
+import DBAD from "../../img/DBAD.svg"
+import DBCP from "../../img/DBCP.svg"
+import DBMF from "../../img/DBMF.svg"
+import DBMIH from "../../img/DBMIH.svg"
+import DBQS from "../../img/DBQS.svg"
+import DBRC from "../../img/DBRC.svg"
+import DBRH from "../../img/DBRH.svg"
+import DBInitialize from "../../img/DBInitialize.svg"
 
 // Importing all the styled components from ProjectStyles.js
 import {
@@ -122,6 +137,10 @@ import {
   PopupContainerMail,
   PopupContentMail,
   IFShown,
+  InfoContainerD,
+  GalleryItemsD,
+  ImagesD,
+  GalleryD
 } from "./ProjectStyles";
 
 import {
@@ -199,6 +218,7 @@ const Project = () => {
   const [activeButtonA, setActiveButtonA] = useState(1);
   const [activeButtonC, setActiveButtonC] = useState(1);
   const [activeButtonN, setActiveButtonN] = useState(1);
+  const [activeButtonD, setActiveButtonD] = useState(1);
 
   const handleButtonClickA = (buttonId) => {
     setActiveButtonA(buttonId);
@@ -210,6 +230,10 @@ const Project = () => {
 
   const handleButtonClickN = (buttonId) => {
     setActiveButtonN(buttonId);
+  };
+
+  const handleButtonClickD = (buttonId) => {
+    setActiveButtonD(buttonId);
   };
 
   const renderContainerA = (buttonId) => {
@@ -229,6 +253,13 @@ const Project = () => {
   const renderContainerN = (buttonId) => {
     if (activeButtonN === buttonId) {
       return <ProjectDisplay>{getContentForButtonN(buttonId)}</ProjectDisplay>;
+    }
+    return null;
+  };
+
+  const renderContainerD = (buttonId) => {
+    if (activeButtonD === buttonId) {
+      return <ProjectDisplay>{getContentForButtonD(buttonId)}</ProjectDisplay>;
     }
     return null;
   };
@@ -569,36 +600,122 @@ const Project = () => {
             <GalleryWrapper>
               <Gallery>
                 <GalleryItemsN>
-                  <ImagesN src={OnBoarding} />
-                  <GalleryDes>OnBoarding</GalleryDes>
-                </GalleryItemsN>
-                <GalleryItemsN>
-                  <ImagesN src={LogIn} />
-                  <GalleryDes>LogIn</GalleryDes>
-                </GalleryItemsN>
-                <GalleryItemsN>
-                  <ImagesN src={SignUp} />
-                  <GalleryDes>SignUp</GalleryDes>
-                </GalleryItemsN>
-                <GalleryItemsN>
-                  <ImagesN src={HomeSkeleton} />
-                  <GalleryDes>Dashboard</GalleryDes>
-                </GalleryItemsN>
-                <GalleryItemsN>
-                  <ImagesN src={Search} />
-                  <GalleryDes>Search</GalleryDes>
-                </GalleryItemsN>
-                <GalleryItemsN>
-                  <ImagesN src={History} />
-                  <GalleryDes>History</GalleryDes>
-                </GalleryItemsN>
-                <GalleryItemsN>
-                  <ImagesN src={Profile} />
-                  <GalleryDes>Profile</GalleryDes>
+                  <ImagesN src={UC} />
+                  <GalleryDes>Under Construction</GalleryDes>
                 </GalleryItemsN>
               </Gallery>
             </GalleryWrapper>
             <TION>Under Construction</TION>
+          </>
+        );
+      default:
+        return null;
+    }
+  };
+
+  //-------------------------------------------------------------------------------------------------------
+  //-------------------------------------------------------- D --------------------------------------------
+  //-------------------------------------------------------------------------------------------------------
+
+  const getContentForButtonD = (buttonId) => {
+    switch (buttonId) {
+      case 1:
+        return (
+          <>
+            <ProjectNameContainer>
+              <ProjectName>Waffle's Bot</ProjectName>
+              <ProjectProgress>Completed</ProjectProgress>
+            </ProjectNameContainer>
+            <Description>
+              A powerful Discord FAQ bot that utilizes advanced algorithms and
+              natural language processing to provide instant answers to
+              frequently asked questions. By analyzing the keywords in users'
+              prompts, the bot intelligently retrieves relevant answers from a
+              MongoDB database. With its seamless integration and quick response
+              time, "Waffle's Bot" offers a convenient and efficient way for
+              server members to find the information they need
+            </Description>
+            <TION>Discord Bot</TION>
+          </>
+        );
+      case 2:
+        return (
+          <>
+            <ProjectNameContainer>
+              <ProjectName>Waffle's Bot</ProjectName>
+              <ProjectProgress>Completed</ProjectProgress>
+            </ProjectNameContainer>
+            <ScrollTest>
+              <SkillsWrapper>
+                <Skills>
+                  <Badges src={P} />
+                  <BadgeDes>Python</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={DISC} />
+                  <BadgeDes>Discord</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={MDB} />
+                  <BadgeDes>MongoDB</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={GIT} />
+                  <BadgeDes>Git</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={GitHub} />
+                  <BadgeDes>GitHub</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={RASP} />
+                  <BadgeDes>RaspberryPi</BadgeDes>
+                </Skills>
+              </SkillsWrapper>
+            </ScrollTest>
+            <TION>Discord Bot</TION>
+          </>
+        );
+      case 3:
+        return (
+          <>
+            <ProjectNameContainer>
+              <ProjectName>Waffle's Bot</ProjectName>
+              <ProjectProgress>Completed</ProjectProgress>
+            </ProjectNameContainer>
+            <GalleryWrapper>
+              <GalleryD>
+                <GalleryItemsD>
+                  <ImagesD src={DBInitialize} />
+                  <GalleryDes>Initailize The Bot</GalleryDes>
+                </GalleryItemsD>
+                <GalleryItemsD>
+                  <ImagesD src={DBMF} />
+                  <GalleryDes>Menu Filtering</GalleryDes>
+                </GalleryItemsD>
+                <GalleryItemsD>
+                  <ImagesD src={DBCP} />
+                  <GalleryDes>Command Parsing</GalleryDes>
+                </GalleryItemsD>
+                <GalleryItemsD>
+                  <ImagesD src={DBQS} />
+                  <GalleryDes>Question Selection</GalleryDes>
+                </GalleryItemsD>
+                {/* <GalleryItemsD>
+                  <ImagesD src={DBMIH} />
+                  <GalleryDes>Menu Input Handling</GalleryDes> */}
+                {/* </GalleryItemsD> */}
+                <GalleryItemsD>
+                  <ImagesD src={DBRH} />
+                  <GalleryDes>Reaction Handling</GalleryDes>
+                </GalleryItemsD>
+                <GalleryItemsD>
+                  <ImagesD src={DBAD} />
+                  <GalleryDes>Answer Display</GalleryDes>
+                </GalleryItemsD>
+              </GalleryD>
+            </GalleryWrapper>
+            <TION>Discord Bot</TION>
           </>
         );
       default:
@@ -719,7 +836,7 @@ const Project = () => {
       title: "Nexifia",
       description:
         "Introducing an exciting and transformative mobile application currently under construction. This innovative project aims to revolutionize the way healthcare providers and clinics interact, streamlining communication and improving patient care. With a focus on efficiency and collaboration, this app will empower healthcare professionals to enhance their workflows, leading to improved diagnoses, treatments, and overall patient outcomes. Stay tuned for more updates as we work diligently to bring this groundbreaking project to life.",
-      gallery: ["image1.jpg", "image2.jpg", "image3.jpg"],
+      gallery: [UC],
       tools: [
         {
           name: "NodeJS",
@@ -773,6 +890,41 @@ const Project = () => {
       ],
       // Create a demo link for this project
     },
+    {
+      id: 4,
+      title: "Waffle's Bot",
+      description:
+        "A powerful Discord FAQ bot that utilizes advanced algorithms and natural language processing to provide instant answers to frequently asked questions. By analyzing the keywords in users' prompts, the bot intelligently retrieves relevant answers from a MongoDB database. With its seamless integration and quick response time, Waffle's Bot offers a convenient and efficient way for server members to find the information they need",
+      gallery: [DBInitialize, DBMF, DBCP, DBQS, DBMIH, DBRH, DBAD],
+      tools: [
+        {
+          name: "Python",
+          icon: P,
+        },
+        {
+          name: "Discord",
+          icon: DISC,
+        },
+        {
+          name: "Mongo DB",
+          icon: MDB,
+        },
+        {
+          name: "GIT",
+          icon: GIT,
+        },
+        {
+          name: "GitHub",
+          icon: GitHub,
+        },
+        {
+          name: "Raspberry Pi",
+          icon: RASP,
+        },
+        // More tools add when needed
+      ],
+      // Create a demo link for this project
+    },
   ];
 
   return (
@@ -797,6 +949,105 @@ const Project = () => {
           {/* This is where the main top div will go */}
           <TopSection>
             <TopSectionContainer>
+              <InfoContainerN>
+                <LeftContainer>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonN === 1 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerN(1)}
+                  </div>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonN === 2 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerN(2)}
+                  </div>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonN === 3 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerN(3)}
+                  </div>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonN === 4 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerN(4)}
+                  </div>
+                </LeftContainer>
+                <RightContainer>
+                  <Name
+                    active={activeButtonN === 1}
+                    onClick={() => handleButtonClickN(1)}
+                  >
+                    Nexifia
+                  </Name>
+                  <Name
+                    active={activeButtonN === 2}
+                    onClick={() => handleButtonClickN(2)}
+                  >
+                    Tools Being Used
+                  </Name>
+                  <NameN>Gallery</NameN>
+                </RightContainer>
+              </InfoContainerN>
+              <InfoContainerD>
+                <LeftContainer>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonD === 1 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerD(1)}
+                  </div>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonD === 2 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerD(2)}
+                  </div>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonD === 3 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerD(3)}
+                  </div>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonD === 4 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerD(4)}
+                  </div>
+                </LeftContainer>
+                <RightContainer>
+                  <Name
+                    active={activeButtonD === 1}
+                    onClick={() => handleButtonClickD(1)}
+                  >
+                    Waffle's Bot
+                  </Name>
+                  <Name
+                    active={activeButtonD === 2}
+                    onClick={() => handleButtonClickD(2)}
+                  >
+                    Tools Being Used
+                  </Name>
+                  <Name
+                    active={activeButtonD === 3}
+                    onClick={() => handleButtonClickD(3)}
+                  >
+                    Gallery
+                  </Name>
+                </RightContainer>
+              </InfoContainerD>
               <InfoContainerA>
                 <LeftContainer>
                   <div
@@ -901,53 +1152,6 @@ const Project = () => {
                   </Name>
                 </RightContainer>
               </InfoContainerC>
-              <InfoContainerN>
-                <LeftContainer>
-                  <div
-                    className={`container-wrapper ${
-                      activeButtonN === 1 ? "active" : ""
-                    }`}
-                  >
-                    {renderContainerN(1)}
-                  </div>
-                  <div
-                    className={`container-wrapper ${
-                      activeButtonN === 2 ? "active" : ""
-                    }`}
-                  >
-                    {renderContainerN(2)}
-                  </div>
-                  <div
-                    className={`container-wrapper ${
-                      activeButtonN === 3 ? "active" : ""
-                    }`}
-                  >
-                    {renderContainerN(3)}
-                  </div>
-                  <div
-                    className={`container-wrapper ${
-                      activeButtonN === 4 ? "active" : ""
-                    }`}
-                  >
-                    {renderContainerN(4)}
-                  </div>
-                </LeftContainer>
-                <RightContainer>
-                  <Name
-                    active={activeButtonN === 1}
-                    onClick={() => handleButtonClickN(1)}
-                  >
-                    Nexifia
-                  </Name>
-                  <Name
-                    active={activeButtonN === 2}
-                    onClick={() => handleButtonClickN(2)}
-                  >
-                    Tools Being Used
-                  </Name>
-                  <NameN>Gallery</NameN>
-                </RightContainer>
-              </InfoContainerN>
             </TopSectionContainer>
           </TopSection>
           {/* This is where the Tab Bar at the bottom will go */}

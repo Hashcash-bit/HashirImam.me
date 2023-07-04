@@ -281,7 +281,29 @@ const Hello = () => {
         <HiddenContainer>
           <HiddenTitle>Hello.</HiddenTitle>
           <HiddenTyper>
-            i am <Typer />
+            <div
+              style={{
+                width: "max-content",
+                height: "50px",
+                fontSize: "30px",
+                fontWeight: "normal",
+              }}
+            >
+              I am
+            </div>
+            <div
+              style={{
+                height: "50px;",
+                width: "100%",
+                justifyContent: "center",
+                alignItems: "center",
+                alignContent: "center",
+                textAlign: "center",
+                position: "relative",
+              }}
+            >
+              <Typer />
+            </div>
           </HiddenTyper>
           <HiddenImageWrapper>
             <HiddenImageMe src={HASH} />

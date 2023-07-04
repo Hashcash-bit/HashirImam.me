@@ -216,7 +216,7 @@ export const LeftContent = styled.div`
 
 export const Header = styled.div`
   margin-left: 50px;
-  color: white;
+  color: red;
   font-size: 65px;
   font-weight: bold;
   @media screen and (max-width: 1175px) {
@@ -226,8 +226,7 @@ export const Header = styled.div`
 export const SubHeader = styled.div`
   margin-left: 50px;
   color: white;
-  font-size: 35px;
-  font-weight: bold;
+  font-size: 30px;
   @media screen and (max-width: 1175px) {
     margin-left: 0px;
   }
@@ -281,8 +280,6 @@ export const SkillsWrapper = styled.div`
   }
   @media screen and (max-width: 506px) {
     width: 300px;
-    // height: 200px;
-    // margin-bottom: 50px;
   }
 
   &::-webkit-scrollbar {
@@ -487,7 +484,7 @@ display: none;
 `;
 
 export const HiddenTitle = styled.div`
-  color: white;
+  color: red;
   font-size: 65px;
   font-weight: bold;
 `;
@@ -496,6 +493,12 @@ export const HiddenTyper = styled.div`
   font-size: 35px;
   font-weight: bold;
   width: 275px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
 `;
 export const HiddenImageWrapper = styled.div`
   display: flex;
@@ -528,12 +531,13 @@ export const HiddenTechSkillsTitle = styled.div`
   margin-top: 30px;
 `;
 export const HiddenTechSkills = styled.div`
-  width: 90%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
   overflow-y: hidden;
   height: 80px;
+  justify-content: center;
 
   &::-webkit-scrollbar {
     height: 8px;
@@ -544,7 +548,6 @@ export const HiddenTechSkills = styled.div`
     border-radius: 4px; /* Adjust the border radius as desired */
   }
 
-  /* Optional: Styles for the scrollbar track on hover */
   &::-webkit-scrollbar-track:hover {
     background-color: #1e1e1e; /* Change the color as desired */
     transition: ease-in-out 2s;

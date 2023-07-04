@@ -288,12 +288,12 @@ export const RightContent = styled.div`
     border-left-width: 0;
     border-color: red;
     flex-direction: column;
-    height: 100%;
+    height: 80%;
   }
 `;
 
 export const TheName = styled.div`
-  color: ${(props) => (props.active ? "red" : "white")};
+  color: ${(props) => (props.active ? "#FF6B6B" : "white")};
   font-weight: bold;
   font-size: 18px;
   width: fit-content;
@@ -308,7 +308,7 @@ export const TheName = styled.div`
 export const Title = styled.div`
   font-size: 35px;
   font-weight: bold;
-  color: white;
+  color: red;
 `;
 
 export const ExperienceContainer = styled.div`

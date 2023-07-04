@@ -4,8 +4,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const SubHeader = styled.text`
-  color: white;
-  font-size: 35px;
+  color: red;
   font-weight: bold;
 `;
 
@@ -13,27 +12,24 @@ const Typer = () => {
   const words = [
     "a Designer.",
     "a Developer.",
-    "a Thinker.",
     "Creative.",
-    "Passionate.",
-    "Motivated.",
-    "Ambitious.",
-    "Innovative.",
-    "Dedicated.",
-    "Resourceful.",
-    "Talented.",
-    "Curious.",
-    "Fearless.",
-    "Persistent.",
+    "Skilled.",
+    "Agile.",
     "Adaptable.",
-    "Optimistic.",
-    "Energetic.",
-    "Enthusiastic.",
-    "Proactive.",
+    "Innovative.",
+    "Logical.",
     "Versatile.",
-    "Imaginative.",
-    "Determined.",
-    "Resilient.",
+    "Analytical.",
+    "Dynamic.",
+    "Efficient.",
+    "Proactive.",
+    "Precise.",
+    "Resourceful.",
+    "Tech-savvy.",
+    "User-focused.",
+    "Collaborative.",
+    "Methodical.",
+    "Responsive.",
   ];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState(words[currentWordIndex]);
