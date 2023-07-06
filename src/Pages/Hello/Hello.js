@@ -105,6 +105,7 @@ import {
   HiddenIcons,
   HiddenImageWrapper,
   HiddenSocialLinks,
+  CADModels,
 } from "./HelloStyles";
 import {
   PopupContainerMail,
@@ -249,6 +250,15 @@ const Hello = () => {
               </TheLinks>
               <TheLinks to="/Projects">Projects</TheLinks>
             </TheNavigation>
+            <CADModels
+              href="https://sketchfab.com/hashirimam2004"
+              target="_blank"
+            >
+              <div style={{ color: "gray" }}>
+                Check out my <span style={{ color: "red" }}>CAD Models</span>{" "}
+                too
+              </div>
+            </CADModels>
             <TheSocials>
               <SocialLinks
                 href="https://github.com/Hashcash-bit"
@@ -351,6 +361,15 @@ const Hello = () => {
             </HiddenLinks>
             <HiddenLinks to="/Projects">Projects</HiddenLinks>
           </HiddenNav>
+          <CADModels
+              href="https://sketchfab.com/hashirimam2004"
+              target="_blank"
+            >
+              <div style={{ color: "gray" }}>
+                Check out my <span style={{ color: "red" }}>CAD Models</span>{" "}
+                too
+              </div>
+            </CADModels>
           <HiddenSocials>
             <HiddenSocialLinks
               href="https://github.com/Hashcash-bit"

@@ -156,6 +156,25 @@ export const TheNavigation = styled.div`
   }
 `;
 
+export const CADModels = styled.a`
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: auto;
+  self-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    filter: drop-shadow(0 0 0.2px rgba(255, 255, 255, 0.7));
+    transform: translateY(-3px);
+  }
+`;
+
 // The Links Styles go here
 export const TheLinks = styled(Link)`
   font-size: 15px;
@@ -593,7 +612,7 @@ export const WIADWrapper = styled.div`
 `;
 export const HiddenNav = styled.div`
   display: flex;
-  width: 100%;
+  width: 500px;
   border-radius: 100px;
   justify-content: space-around;
   align-items: center;
@@ -608,6 +627,9 @@ export const HiddenNav = styled.div`
   self-align: center;
   margin-bottom: 30px;
   margin-top: 30px;
+  @media screen and (max-width: 504px) {
+    width: 85%;
+  }
 `;
 export const HiddenLinks = styled(Link)`
   font-size: 15px;
@@ -626,7 +648,7 @@ export const HiddenLinks = styled(Link)`
 export const HiddenSocials = styled.div`
   display: flex;
   padding-bottom: 20px;
-  width: 80%;
+  width: 300px;
   justify-content: space-around;
   align-items: center;
   align-content: center;
