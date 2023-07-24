@@ -365,7 +365,7 @@ export const Circle = styled.div`
 `;
 
 export const DesText = styled.div`
-  padding-left: 10px;
+  // padding-left: 10px;
   //   border-left-width: 5px;
   //   border-color: red;
   //   border-radius: 5px;

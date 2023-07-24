@@ -268,12 +268,11 @@ const Experience = () => {
             <LittleDescription>
               <DesText0>Web Development:</DesText0>
               <DesText1>
-                I am committed to writing clean, efficient code that
-                adheres to industry best practices, ensuring optimal
-                performance, accessibility, and maintainability.
+                I am committed to writing clean, efficient code that adheres to
+                industry best practices, ensuring optimal performance,
+                accessibility, and maintainability.
                 <br />
-                <br />
-                I enjoy tackling complex challenges, leveraging my
+                <br />I enjoy tackling complex challenges, leveraging my
                 problem-solving skills to find innovative solutions that enhance
                 user experiences.
               </DesText1>
@@ -460,6 +459,63 @@ const Experience = () => {
             </LittleDescription>
           </>
         );
+      case 5:
+        return (
+          <>
+            <HelpContainer>
+              <SubHeader>iGEM</SubHeader>
+              <SubSubHeader>Lead Web Developer | 2023</SubSubHeader>
+            </HelpContainer>
+            <LittleDescription>
+              {/* <Circle /> */}
+              <DesText>
+                It is a dynamic and interactive platform that engages the
+                audience and communicates my vision, methods, and results. It is
+                also a documentation of the journey, insights, and impact as a
+                synthetic biologist. The website consists of several pages that
+                cover all the aspects of my project, from the problem statement
+                to the engineering success.
+              </DesText>
+            </LittleDescription>
+            <LittleDescription>
+              <Circle />
+              <DesText>
+                Worked with other web developers and designers to create a
+                website that is consistent, appealing, and user-friendly.
+                Coordinated, communicated, and compromised with team
+                members to achieve a common goal.
+              </DesText>
+            </LittleDescription>
+            <LittleDescription>
+              <Circle />
+              <DesText>
+                Communicated effectively with the team, mentors, sponsors, and
+                audience. Conveyed complex ideas in simple and clear terms, and
+                how to listen and respond to feedback and questions.
+              </DesText>
+            </LittleDescription>
+            <LittleDescription>
+              <Circle />
+              <DesText>
+                Developed and improved web development skills by using various
+                tools and technologies, such as NodeJs, Styled Components,
+                Material Ui, Firebase, Firestore, MongoDB, Bootstrap, etc.
+                Created dynamic and interactive web pages that adapt to
+                different devices and screen sizes.
+              </DesText>
+            </LittleDescription>
+            <LittleDescription>
+              <Circle />
+              <DesText>
+                Demonstrated creativity and flair in web design by creating a
+                sleek and responsive design that enhances the readability and
+                aesthetics of the website. Created custom color scheme, font
+                style, layout, media, and navigation to create a positive user
+                experience.
+              </DesText>
+            </LittleDescription>
+          </>
+        );
       default:
         return null;
     }
@@ -477,6 +533,13 @@ const Experience = () => {
           <TopSection>
             <LeftContent>
               {renderContainer(0)}
+              <div
+                className={`container-wrapper ${
+                  activeButton === 5 ? "active" : ""
+                }`}
+              >
+                {renderContainer(5)}
+              </div>
               <div
                 className={`container-wrapper ${
                   activeButton === 1 ? "active" : ""
@@ -508,6 +571,12 @@ const Experience = () => {
             </LeftContent>
             <RightContent>
               <Title>Experiences</Title>
+              <TheName
+                active={activeButton === 5}
+                onClick={() => handleButtonClick(5)}
+              >
+                iGEM
+              </TheName>
               <TheName
                 active={activeButton === 1}
                 onClick={() => handleButtonClick(1)}
