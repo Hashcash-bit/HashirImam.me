@@ -37,10 +37,10 @@ import E from "../../img/E.svg"; // Expo || Nexifia
 import Nfc from "../../img/N.svg"; // NFC || Nexifia
 import GitHub from "../../img/GitHub.svg"; // GitHub || Nexifia || Antive || Covid-19 Tracker
 import FS from "../../img/FS.svg"; // FireStore || Nexifia || Antive
-import P from "../../img/P.svg";
-import DISC from "../../img/DISC.svg";
-import RASP from "../../img/RASP.svg";
-import MDB from "../../img/MDB.svg";
+import P from "../../img/P.svg"; //Python
+import DISC from "../../img/DISC.svg"; // Discord
+import RASP from "../../img/RASP.svg"; // Raspberry Pie
+import MDB from "../../img/MDB.svg"; // MongoDB
 
 // Antive Images
 import LandingPage from "../../img/LandingPage.png";
@@ -66,14 +66,17 @@ import Profile from "../../img/Profile.svg";
 import UC from "../../img/UC.png";
 
 // Waffles Bot
-import DBAD from "../../img/DBAD.svg"
-import DBCP from "../../img/DBCP.svg"
-import DBMF from "../../img/DBMF.svg"
-import DBMIH from "../../img/DBMIH.svg"
-import DBQS from "../../img/DBQS.svg"
-import DBRC from "../../img/DBRC.svg"
-import DBRH from "../../img/DBRH.svg"
-import DBInitialize from "../../img/DBInitialize.svg"
+import DBAD from "../../img/DBAD.svg";
+import DBCP from "../../img/DBCP.svg";
+import DBMF from "../../img/DBMF.svg";
+import DBMIH from "../../img/DBMIH.svg";
+import DBQS from "../../img/DBQS.svg";
+import DBRC from "../../img/DBRC.svg";
+import DBRH from "../../img/DBRH.svg";
+import DBInitialize from "../../img/DBInitialize.svg";
+
+// Medmatchr
+import OBM from "../../img/OBM.png";
 
 // Importing all the styled components from ProjectStyles.js
 import {
@@ -140,7 +143,7 @@ import {
   InfoContainerD,
   GalleryItemsD,
   ImagesD,
-  GalleryD
+  GalleryD,
 } from "./ProjectStyles";
 
 import {
@@ -216,12 +219,17 @@ const Project = () => {
 
   // This is where the project slider will go
   const [activeButtonA, setActiveButtonA] = useState(1);
+  const [activeButtonM, setActiveButtonM] = useState(1);
   const [activeButtonC, setActiveButtonC] = useState(1);
   const [activeButtonN, setActiveButtonN] = useState(1);
   const [activeButtonD, setActiveButtonD] = useState(1);
 
   const handleButtonClickA = (buttonId) => {
     setActiveButtonA(buttonId);
+  };
+
+  const handleButtonClickM = (buttonId) => {
+    setActiveButtonM(buttonId);
   };
 
   const handleButtonClickC = (buttonId) => {
@@ -239,6 +247,13 @@ const Project = () => {
   const renderContainerA = (buttonId) => {
     if (activeButtonA === buttonId) {
       return <ProjectDisplay>{getContentForButtonA(buttonId)}</ProjectDisplay>;
+    }
+    return null;
+  };
+
+  const renderContainerM = (buttonId) => {
+    if (activeButtonM === buttonId) {
+      return <ProjectDisplay>{getContentForButtonM(buttonId)}</ProjectDisplay>;
     }
     return null;
   };
@@ -388,6 +403,110 @@ const Project = () => {
               href="https://61350e7c40e8e9603eed77be--festive-swartz-7d699d.netlify.app/"
               target="_blank"
             >
+              Try It Out
+            </TIO>
+          </>
+        );
+      default:
+        return null;
+    }
+  };
+  //-------------------------------------------------------------------------------------------------------
+  //-------------------------------------------------------- M --------------------------------------------
+  //-------------------------------------------------------------------------------------------------------
+
+  const getContentForButtonM = (buttonId) => {
+    switch (buttonId) {
+      case 1:
+        return (
+          <>
+            <ProjectNameContainer>
+              <ProjectName>MEDMATCHR</ProjectName>
+              <ProjectProgress>Under Construction</ProjectProgress>
+            </ProjectNameContainer>
+            <Description>
+              A tool that lets you search, compare, and explore courses from
+              McMaster University (we are working on expanding our database).
+              You can enter any course code or name and see its classification,
+              such as advanced bio, bio, physics, etc. You can also compare
+              different courses and see how they relate to each other. You can
+              even explore new subjects and fields that you might not have
+              considered before. This tool streamlines the process of finding
+              which courses count as what prerequisites for other institutions.
+            </Description>
+            <TIO href="https://www.medmatchr.tech" target="_blank">
+              Try It Out
+            </TIO>
+          </>
+        );
+      case 2:
+        return (
+          <>
+            <ProjectNameContainer>
+              <ProjectName>MEDMATCHR</ProjectName>
+              <ProjectProgress>Under Construction</ProjectProgress>
+            </ProjectNameContainer>
+            <ScrollTest>
+              <SkillsWrapper>
+                <Skills>
+                  <Badges src={NODE} />
+                  <BadgeDes>NodeJS</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={R} />
+                  <BadgeDes>ReactJS</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={FB} />
+                  <BadgeDes>Firebase</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={FS} />
+                  <BadgeDes>Firestore</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={MDB} />
+                  <BadgeDes>Mongo DB</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={F} />
+                  <BadgeDes>Figma</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={GIT} />
+                  <BadgeDes>Git</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={GitHub} />
+                  <BadgeDes>GitHub</BadgeDes>
+                </Skills>
+                <Skills>
+                  <Badges src={NET} />
+                  <BadgeDes>Netlify</BadgeDes>
+                </Skills>
+              </SkillsWrapper>
+            </ScrollTest>
+            <TIO href="https://www.medmatchr.tech" target="_blank">
+              Try It Out
+            </TIO>
+          </>
+        );
+      case 3:
+        return (
+          <>
+            <ProjectNameContainer>
+              <ProjectName>MEDMATCHR</ProjectName>
+              <ProjectProgress>Under Construction</ProjectProgress>
+            </ProjectNameContainer>
+            <GalleryWrapper>
+              <Gallery>
+                <GalleryItemsN>
+                  <ImagesN src={OBM} />
+                  <GalleryDes>OnBoarding Page</GalleryDes>
+                </GalleryItemsN>
+              </Gallery>
+            </GalleryWrapper>
+            <TIO href="https://www.medmatchr.tech" target="_blank">
               Try It Out
             </TIO>
           </>
@@ -789,6 +908,53 @@ const Project = () => {
         "https://61350e7c40e8e9603eed77be--festive-swartz-7d699d.netlify.app/",
     },
     {
+      id: 5,
+      title: "MEDMATCHR",
+      description:
+        "A tool that lets you search, compare, and explore courses from McMaster University (we are working on expanding our database). You can enter any course code or name and see its classification, such as advanced bio, bio, physics, etc. You can also compare different courses and see how they relate to each other. You can even explore new subjects and fields that you might not have considered before. This tool streamlines the process of finding which courses count as what prerequisites for other institutions.",
+      gallery: [OBM],
+      tools: [
+        {
+          name: "NodeJS",
+          icon: NODE,
+        },
+        {
+          name: "ReactJS",
+          icon: R,
+        },
+        {
+          name: "Firebase",
+          icon: FB,
+        },
+        {
+          name: "Firestore",
+          icon: FS,
+        },
+        {
+          name: "Mongo Db",
+          icon: MDB,
+        },
+        {
+          name: "Figma",
+          icon: F,
+        },
+        {
+          name: "GIT",
+          icon: GIT,
+        },
+        {
+          name: "GitHub",
+          icon: GitHub,
+        },
+        {
+          name: "Netlify",
+          icon: NET,
+        },
+        // More tools add when needed
+      ],
+      demoLink: "https://www.medmatchr.tech",
+    },
+    {
       id: 2,
       title: "Covid-19 Tracker",
       description:
@@ -949,6 +1115,8 @@ const Project = () => {
           {/* This is where the main top div will go */}
           <TopSection>
             <TopSectionContainer>
+              {/* Nexifia */}
+
               <InfoContainerN>
                 <LeftContainer>
                   <div
@@ -996,6 +1164,64 @@ const Project = () => {
                   <NameN>Gallery</NameN>
                 </RightContainer>
               </InfoContainerN>
+
+              {/* MedMatchr */}
+
+              <InfoContainerA>
+                <LeftContainer>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonM === 1 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerM(1)}
+                  </div>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonM === 2 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerM(2)}
+                  </div>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonM === 3 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerM(3)}
+                  </div>
+                  <div
+                    className={`container-wrapper ${
+                      activeButtonM === 4 ? "active" : ""
+                    }`}
+                  >
+                    {renderContainerM(4)}
+                  </div>
+                </LeftContainer>
+                <RightContainer>
+                  <Name
+                    active={activeButtonM === 1}
+                    onClick={() => handleButtonClickM(1)}
+                  >
+                    MEDMATCHR
+                  </Name>
+                  <Name
+                    active={activeButtonM === 2}
+                    onClick={() => handleButtonClickM(2)}
+                  >
+                    Tools Used
+                  </Name>
+                  <Name
+                    active={activeButtonM === 3}
+                    onClick={() => handleButtonClickM(3)}
+                  >
+                    Gallery
+                  </Name>
+                </RightContainer>
+              </InfoContainerA>
+
+              {/* Discord Bot */}
+
               <InfoContainerD>
                 <LeftContainer>
                   <div
@@ -1048,6 +1274,9 @@ const Project = () => {
                   </Name>
                 </RightContainer>
               </InfoContainerD>
+
+              {/* Antive */}
+
               <InfoContainerA>
                 <LeftContainer>
                   <div
@@ -1100,6 +1329,9 @@ const Project = () => {
                   </Name>
                 </RightContainer>
               </InfoContainerA>
+
+              {/* Covid Tracker */}
+
               <InfoContainerC>
                 <LeftContainer>
                   <div
